@@ -1,0 +1,9 @@
+.national_code {
+  direction: rtl;
+  text-align: right;
+}
+
+.national_code .image img {
+  width: 50%;
+}
+/*# sourceMappingURL=national_code.css.map */

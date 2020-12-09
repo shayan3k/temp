@@ -1,0 +1,372 @@
+@import "./colors";
+// .girls-page {
+.girls-page {
+  .main_menu {
+    // background-color: transparent;
+
+    .header-image {
+      max-width: 50px;
+    }
+
+    .navbar-collapse {
+      .navbar-nav .nav-item a {
+        color: $black_color;
+      }
+    }
+    .navbar-nav .nav-item {
+      a {
+        color: $black_color;
+        // text-shadow: 0 0 2px $black_color;
+      }
+
+      &:last-child {
+        a {
+          background-color: $yellow_color;
+          color: $white_color;
+          text-shadow: unset;
+        }
+      }
+    }
+
+    &.bg {
+      background-color: $light_gold_color;
+
+      // .navbar-nav .nav-item a {
+      //   color: $white_color;
+      // }
+    }
+  }
+
+  .main {
+    .intro-wrapper {
+      background: $white_color;
+
+      .content {
+        text-align: center;
+
+        .btn {
+          background-color: $yellow_color;
+          @include transition;
+          border: 0;
+          box-shadow: 0 0 25px rgba($color: $black_color, $alpha: 0.2);
+
+          &:hover {
+            color: $white_color;
+            box-shadow: 0 0 45px rgba($color: $black_color, $alpha: 0.3);
+          }
+        }
+        h1 {
+          color: $gold_color;
+
+          span {
+            color: $crismon_color;
+          }
+        }
+        h2 {
+          color: $black_color;
+        }
+      }
+    }
+
+    .why-wrapper {
+      border-bottom-right-radius: 38%;
+      border-bottom-left-radius: 0%;
+
+      .row {
+        direction: ltr;
+      }
+
+      .col-12 {
+        direction: rtl;
+      }
+
+      .title-box {
+        h2 {
+          background-color: $crismon_color;
+
+          &::before {
+            background-image: url("../images/title-ribbon-crismon.png");
+          }
+        }
+      }
+
+      .humanObj {
+        left: unset;
+        right: 0;
+      }
+
+      ul li {
+        color: #404040;
+      }
+    }
+
+    .teacher-wrapper {
+      background: $crismon_color;
+      color: $white_color;
+
+      .title-box .title {
+        color: $white_color;
+        background-color: $yellow_color;
+
+        &::before {
+          background-image: url("../images/title-ribbon-yellow.png");
+        }
+      }
+    }
+
+    .time-wrapper {
+      .title-section {
+        background-color: $crismon_color;
+
+        &::before {
+          background-image: url("../images/title-ribbon-crismon.png");
+        }
+      }
+
+      .time-item {
+        .title-box {
+          background-color: $black_color;
+        }
+      }
+
+      .owl-theme .owl-nav [class*="owl-"] {
+        color: $gold_color;
+      }
+    }
+
+    .free-wrapper {
+      background: $light_gold_color;
+
+      .title-box {
+        color: $brown_color;
+      }
+
+      .display-4 {
+        text-shadow: 0 0 2px $black_color;
+      }
+
+      p {
+        // text-shadow: 0 0 1px $black_color;
+        color: $black_color;
+      }
+    }
+
+    .amount-wrapper {
+      .title-box > div {
+        border-color: $crismon_color;
+
+        &:hover {
+          background-color: $crismon_color;
+        }
+      }
+
+      .content-box strong.blue-color {
+        color: $red_color;
+      }
+    }
+
+    .ranking-wrapper {
+      background: $crismon_color;
+
+      .gEIJqc {
+        color: $white_color;
+      }
+
+      .geDzqp {
+        color: $white_color;
+
+        &:hover:enabled,
+        &:focus:enabled {
+          background-color: $black_color;
+          color: $white_color;
+        }
+      }
+
+      .title-box {
+        background-color: $yellow_color;
+        color: $white_color !important;
+
+        &::before {
+          background-image: url("../images/title-ribbon-yellow.png");
+        }
+      }
+    }
+
+    .comment-wrapper {
+      .title-section {
+        background-color: $crismon_color;
+
+        &::before {
+          background-image: url("../images/title-ribbon-crismon.png");
+        }
+      }
+    }
+
+    .social-wrapper {
+      background: $light_gold_color;
+
+      .section-title {
+        background-color: $crismon_color;
+        color: $white_color;
+
+        &::before {
+          background-image: url("../images/title-ribbon-crismon.png");
+        }
+      }
+    }
+  }
+
+  .why-wrapper .title-box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -1px;
+    height: 51px;
+    width: 20%;
+    background: url(../images/title-ribbon-crismon.png) no-repeat;
+    background-size: 100% 100%;
+  }
+  .free-wrapper {
+    .title-box {
+      background-color: $crismon_color;
+      color: $white_color !important;
+
+      &::before {
+        background-image: url("../images/title-ribbon-crismon.png");
+      }
+    }
+  }
+
+  .btn-danger {
+    background-color: $girl_red_color;
+    border-color: $girl_red_color;
+  }
+
+  .btn-primary {
+    background-color: $crismon_color;
+    border-color: $crismon_color;
+  }
+
+  .page-title {
+    .breadcrumb-wrap {
+      background-color: $light_gold_color;
+
+      &::before {
+        background-color: $light_gold_color;
+      }
+
+      ul li a {
+        color: $black_color;
+      }
+    }
+
+    .p-title {
+      background-color: $crismon_color;
+
+      &::after,
+      &::before {
+        background-color: $crismon_color;
+      }
+    }
+  }
+
+  .teachers-wrapper {
+    .teacher-item .image::before {
+      background-color: rgba($color: $light_gold_color, $alpha: 0.5);
+    }
+  }
+
+  .courses-wrapper {
+    .course-item .image-box::before {
+      background-color: rgba($color: $light_gold_color, $alpha: 0.65);
+    }
+  }
+
+  .filter-navigation {
+    .filter-box::before {
+      background-color: rgba($color: $crismon_color, $alpha: 0.65);
+    }
+  }
+
+  .single-course-wrapper {
+    .widget {
+      .widget-body {
+        .timing-list li {
+          .lb {
+            background-color: rgba($color: $crismon_color, $alpha: 0.85);
+          }
+
+          .fb {
+            background-color: $crismon_color;
+          }
+        }
+
+        .categorys-list li a {
+          background-color: $pink_color;
+
+          &:hover {
+            background-color: $red_color;
+          }
+        }
+      }
+
+      .widget-title {
+        background-color: $light_gold_color;
+        color: $black_color;
+      }
+    }
+
+    .box-title::before {
+      background-color: $crismon_color;
+    }
+
+    .overview-box ul li::before,
+    .teachers ul li .content .title {
+      color: $crismon_color;
+    }
+  }
+
+  .footer-area {
+    .single-footer-widget {
+      h4::before {
+        background-color: $gold_color;
+      }
+    }
+
+    .footer-link:hover {
+      color: $gold_color;
+    }
+  }
+}
+
+@media only screen and(max-width: 993px) {
+  .navbar-collapse {
+    background-color: transparent;
+  }
+
+  .navbar-light .navbar-toggler {
+    background-color: $yellow_color;
+    border: 0;
+
+    &:focus {
+      outline: 0;
+      border: 0;
+    }
+  }
+}
+
+@media only screen and(min-width: 992px) {
+  .main_menu {
+    .navbar-collapse {
+      background-color: transparent;
+    }
+  }
+}
+
+@media only screen and(max-width: 992px) {
+  .main_menu {
+    .navbar-collapse {
+      background-color: white;
+    }
+  }
+}

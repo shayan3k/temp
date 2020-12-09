@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACb,SAAS,EAAE,GAAG;EACd,UAAU,EAAE,KAAK;CAOlB;;AATD,AAKI,cALU,CAIZ,MAAM,CACJ,GAAG,CAAC;EACF,KAAK,EAAE,GAAG;CACX",
+    "sources": [
+        "national_code.scss"
+    ],
+    "names": [],
+    "file": "national_code.css"
+}

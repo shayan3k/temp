@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACX,MAAM,EAAE,gBAAgB;CACzB",
+    "sources": [
+        "confirmation_list.scss"
+    ],
+    "names": [],
+    "file": "confirmation_list.css"
+}

@@ -1,0 +1,30 @@
+@import url("./bootstrap.css");
+@import url("./icons.css");
+@import "reset";
+@import "header";
+@import "menu";
+@import "forms";
+@import "./dashboard/subset";
+
+.site-padding {
+  padding: 100px 220px 20px 40px;
+}
+
+.wrapper .container-fluid {
+  background-color: var(--white-color);
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.section-title {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: var(--black-color);
+  margin-bottom: 1rem;
+}
+
+.table {
+  img {
+    height: 35px;
+  }
+}

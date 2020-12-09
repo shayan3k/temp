@@ -1,0 +1,133 @@
+@import "./colors";
+.main_menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+  display: block;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 400;
+  color: #212529;
+  text-align: right;
+  background-color: rgba($color: $white_color, $alpha: 0.75);
+  @include transition;
+
+  .header-image {
+    max-width: 170px;
+  }
+
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .navbar-nav {
+    list-style: none;
+
+    .nav-item {
+      margin-left: 5px;
+
+      a {
+        color: $black_color;
+        text-decoration: none;
+        @include transition;
+        display: block;
+        padding: 7px 20px;
+        border-radius: 32px;
+        font-weight: 600;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.2);
+        }
+      }
+
+      &:last-child {
+        margin-left: 0;
+
+        a {
+          color: $white_color !important;
+          background-color: $light_blue_color;
+        }
+      }
+    }
+  }
+
+  .main-menu-item {
+    .nav-link {
+      color: $white_color !important;
+    }
+    ul {
+      .nav-link {
+        color: $white_color;
+        font-size: 15px;
+        direction: rtl;
+        padding: 0px 0.8vw;
+        font-weight: bold;
+      }
+
+      .nav-link:hover {
+        color: $red_color !important;
+        transition: all 0.4s ease-in-out;
+      }
+
+      .btn_1 {
+        text-decoration: none;
+        color: $white_color;
+        font-size: 1rem;
+        padding: 8px 20px;
+        margin-right: 1rem;
+        border-radius: 32px;
+        box-shadow: 0px 12px 20px 0px rgba(255, 126, 95, 0.15);
+      }
+      .btn_1:hover {
+        color: $white_color;
+        background-position: right center;
+        box-shadow: 0px 10px 30px 0px rgba(193, 34, 10, 0.2);
+      }
+    }
+  }
+
+  .navbar-collapse {
+    background-color: $white_color;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    .navbar-nav {
+      padding: 10px 0;
+      padding-bottom: 15px;
+
+      .nav-item {
+        a {
+          color: $black_color;
+          font-weight: 600;
+          font-size: 1.05em;
+        }
+      }
+    }
+  }
+
+  &.bg {
+    background-color: rgba($color: $blue_color, $alpha: 0.95);
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.411);
+  }
+}
+
+.navbar-brand {
+  margin-right: 0 !important;
+  margin-left: 1rem;
+
+  img {
+    max-height: 38px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main_menu .navbar-nav .nav-item {
+    margin: 0.25rem 0;
+  }
+}

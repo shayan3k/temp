@@ -1,0 +1,47 @@
+.subset-wrapper {
+  .subset-item {
+    background-color: var(--navi-color);
+    color: var(--white-color);
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+
+    &.gray {
+      background-color: #535c68;
+    }
+
+    a {
+      color: var(--white-color);
+      display: inline-block;
+      font-size: 90%;
+      font-weight: 300;
+      opacity: 0.6;
+      margin-top: 1rem;
+      text-decoration: none;
+      @include transition();
+
+      i {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 3px;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    h6 {
+      opacity: 0.6;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+    }
+
+    #subset-amount {
+      letter-spacing: 1px;
+      font-size: 4em;
+      text-shadow: 0 0 2px;
+      line-height: 1.2;
+    }
+  }
+}

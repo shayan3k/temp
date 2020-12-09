@@ -1,0 +1,28 @@
+{
+  "short_name": "Besat Plus",
+  "name": "Besat Plus webAPP",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "favicon.ico",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "favicon.ico",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#26bbff",
+  "background_color": "#ffffff",
+  "dir": "rtl",
+  "lang": "fa",
+  "description": "موسسه علمی،فرهنگی،آموزشی و انتشاراتی بعثت با ۳ دهه سابقه ی درخشان آموزشی و بهرمندی از امکاناتی کم نظیر در زمینه ی خدمات کمک اموزشی،نتایج درخشانی در کارنامه ی خود ثبت نموده است که حاصل لطف خدا،تلاش شبانه روزی موسس و مدیر عامل محترم و کادر علمی و اجرایی خود می باشد."
+}

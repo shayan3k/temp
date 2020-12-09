@@ -1,0 +1,58 @@
+@import "../colors";
+
+.contact-wrapper {
+  .contact-box {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    p:not(.h4) {
+      color: $text_color;
+    }
+
+    i {
+      display: inline-block;
+      width: 130px;
+      height: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      margin-bottom: 1rem;
+      background-color: $blue_color;
+      color: $white_color;
+      text-align: center;
+      overflow: hidden;
+      line-height: 200px;
+      font-size: 4em;
+    }
+  }
+
+  .col-sm-6 {
+    &:nth-child(1) {
+      .contact-box i {
+        filter: hue-rotate(0deg);
+      }
+    }
+
+    &:nth-child(2) {
+      .contact-box i {
+        filter: hue-rotate(90deg);
+      }
+    }
+
+    &:nth-child(3) {
+      .contact-box i {
+        filter: hue-rotate(180deg);
+      }
+    }
+
+    &:nth-child(4) {
+      .contact-box i {
+        filter: hue-rotate(270deg);
+      }
+    }
+  }
+
+  textarea.form-control {
+    min-height: 160px;
+  }
+}

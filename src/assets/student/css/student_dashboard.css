@@ -1,0 +1,71 @@
+.dashboard-main {
+  padding-top: 140px !important;
+  padding-right: 210px !important;
+  padding-left: 20px !important;
+  padding-bottom: 20px !important;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.dashboard-footer {
+  padding-right: 190px !important;
+  padding-left: 15px !important;
+}
+
+.card {
+  border: initial;
+  background: #fff;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04), 0 1px 6px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04), 0 1px 6px rgba(0, 0, 0, 0.04);
+}
+
+.card-title {
+  margin-bottom: 2rem;
+  font-size: 1.125em;
+}
+
+.today-classes {
+  max-height: 500px;
+  overflow: auto;
+}
+
+.today-classes .badge {
+  top: 8px;
+  left: -5px;
+  font-weight: 600;
+  font-size: 80%;
+}
+
+.today-classes .list-thumbnail {
+  border-radius: 1rem;
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.today-classes .list-item-heading {
+  text-shadow: 0 0 1px;
+  margin-bottom: 1rem;
+  color: #303030;
+}
+
+.today-classes .text-muted {
+  color: #777;
+}
+
+.today-classes .text-primary::before {
+  content: "\e081";
+  font-family: "simple-line-icons";
+  display: inline-block;
+  vertical-align: middle;
+  color: inherit;
+  margin-left: 5px;
+  font-size: 85%;
+}
+/*# sourceMappingURL=student_dashboard.css.map */

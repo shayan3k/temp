@@ -1,0 +1,71 @@
+$red_color: #ff364d;
+$girl_red_color: #ff364d;
+$black_color: #303030;
+$white_color: #ffffff;
+$text_color: #565e66;
+$blue_color: #0f2e7e;
+$light_blue_color: #00a8ff;
+$pink_color: #f78fb3;
+$purple_color: #7224a2;
+$yellow_color: #ddb439;
+$brown_color: #6a5f0b;
+$orange_color: #ff7644;
+$menu_color: #0c2e60;
+$crismon_color: #b71540;
+$gold_color: #f8d210;
+$green_color: #5ed404;
+$light_gold_color: #f1dea7f5;
+
+@mixin transition($property: 0.3s) {
+  transition: all $property ease-in-out;
+  -moz-transition: all $property ease-in-out;
+  -ms-transition: all $property ease-in-out;
+  -webkit-transition: all $property ease-in-out;
+  -o-transition: all $property ease-in-out;
+}
+
+@mixin transform($property: scale(1.2)) {
+  transform: $property;
+  -moz-transform: $property;
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  -o-transform: $property;
+}
+
+@mixin gradient {
+  background: -webkit-linear-gradient(
+    left,
+    rgb(18, 29, 102) 0%,
+    rgb(11, 70, 160) 40%,
+    rgb(11, 74, 166) 92%,
+    rgb(12, 66, 154) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgb(18, 29, 102) 0%,
+    rgb(11, 70, 160) 40%,
+    rgb(11, 74, 166) 92%,
+    rgb(12, 66, 154) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgb(18, 29, 102) 0%,
+    rgb(11, 70, 160) 40%,
+    rgb(11, 74, 166) 92%,
+    rgb(12, 66, 154) 100%
+  );
+  background: -moz-linear-gradient(
+    left,
+    rgb(18, 29, 102) 0%,
+    rgb(11, 70, 160) 40%,
+    rgb(11, 74, 166) 92%,
+    rgb(12, 66, 154) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgb(18, 29, 102) 0%,
+    rgb(11, 70, 160) 40%,
+    rgb(11, 74, 166) 92%,
+    rgb(12, 66, 154) 100%
+  );
+}

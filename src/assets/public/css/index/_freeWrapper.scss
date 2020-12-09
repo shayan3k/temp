@@ -1,0 +1,105 @@
+@import "../colors";
+.free-wrapper {
+  position: relative;
+  padding-top: 125px;
+  padding-bottom: 200px;
+  @include gradient();
+  color: $white_color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: auto;
+    width: 1600px;
+    height: 41px;
+    background: url("../../images/free-shape.png") no-repeat center center;
+    background-size: 100% 100%;
+  }
+
+  .video-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+
+    & > div {
+      padding: 0 !important;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .play-button {
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background-color: rgba($color: #000000, $alpha: 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 5em;
+      color: $white_color;
+      text-decoration: none;
+      @include transition();
+    }
+
+    &:hover {
+      .play-button {
+        background-color: rgba($color: #000000, $alpha: 0.75);
+      }
+    }
+  }
+
+  .title-box {
+    position: relative;
+    display: inline-block;
+    background-color: $white_color;
+    padding-right: 15px;
+    height: 50px;
+    line-height: 51px;
+    font-size: 1.35em;
+    font-weight: bold;
+    color: $blue_color;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin-bottom: 3rem;
+
+    span {
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      left: -150px;
+      top: -1px;
+      width: 150px;
+      height: 51px;
+      background: url("../../images/title-ribbon-white.png") no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+
+  .display-4 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    margin-top: 2rem;
+  }
+}

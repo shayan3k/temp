@@ -1,0 +1,426 @@
+@import url(plugins/bootstrap.css);
+@import url(plugins/fontawesome.css);
+// @import url(plugins/owl.css);
+
+$red_color: #ff364d;
+$black_color: #303030;
+$white_color: #ffffff;
+$text_color: #565e66;
+$blue_color: #0f2e7e;
+$light_blue_color: #00a8ff;
+$pink_color: #f78fb3;
+$purple_color: #7224a2;
+$yellow_color: #ddb439;
+$brown_color: #6a5f0b;
+$orange_color: #ff7644;
+$menu_color: #0c2e60;
+
+@mixin transition($property: 0.3s) {
+  transition: all $property ease-in-out;
+  -moz-transition: all $property ease-in-out;
+  -ms-transition: all $property ease-in-out;
+  -webkit-transition: all $property ease-in-out;
+  -o-transition: all $property ease-in-out;
+}
+
+@mixin transform($property: scale(1.2)) {
+  transform: $property;
+  -moz-transform: $property;
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  -o-transform: $property;
+}
+
+@mixin gradient {
+  background: -webkit-linear-gradient(
+    left,
+    rgb(18, 29, 102) 0%,
+    rgb(11, 70, 160) 40%,
+    rgb(11, 74, 166) 92%,
+    rgb(12, 66, 154) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgb(18, 29, 102) 0%,
+    rgb(11, 70, 160) 40%,
+    rgb(11, 74, 166) 92%,
+    rgb(12, 66, 154) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgb(18, 29, 102) 0%,
+    rgb(11, 70, 160) 40%,
+    rgb(11, 74, 166) 92%,
+    rgb(12, 66, 154) 100%
+  );
+  background: -moz-linear-gradient(
+    left,
+    rgb(18, 29, 102) 0%,
+    rgb(11, 70, 160) 40%,
+    rgb(11, 74, 166) 92%,
+    rgb(12, 66, 154) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgb(18, 29, 102) 0%,
+    rgb(11, 70, 160) 40%,
+    rgb(11, 74, 166) 92%,
+    rgb(12, 66, 154) 100%
+  );
+}
+
+// @mixin gradient_girls {
+//   background: -webkit-linear-gradient(
+//     left,
+//     rgb(102, 18, 95) 0%,
+//     rgb(147, 11, 160) 40%,
+//     rgb(166, 11, 153) 92%,
+//     rgb(154, 12, 142) 100%
+//   );
+//   background: -o-linear-gradient(
+//     left,
+//     rgb(102, 18, 95) 0%,
+//     rgb(147, 11, 160) 40%,
+//     rgb(166, 11, 153) 92%,
+//     rgb(154, 12, 142) 100%
+//   );
+//   background: -ms-linear-gradient(
+//     left,
+//     rgb(102, 18, 95) 0%,
+//     rgb(147, 11, 160) 40%,
+//     rgb(166, 11, 153) 92%,
+//     rgb(154, 12, 142) 100%
+//   );
+//   background: -moz-linear-gradient(
+//     left,
+//     rgb(102, 18, 95) 0%,
+//     rgb(147, 11, 160) 40%,
+//     rgb(166, 11, 153) 92%,
+//     rgb(154, 12, 142) 100%
+//   );
+//   background: linear-gradient(
+//     to right,
+//     rgb(102, 18, 95) 0%,
+//     rgb(147, 11, 160) 40%,
+//     rgb(166, 11, 153) 92%,
+//     rgb(154, 12, 142) 100%
+//   );
+// }
+
+@font-face {
+  font-family: "sans";
+  src: url("../fonts/IRANSansWebFaNum.eot");
+  src: url("../fonts/IRANSansWebFaNum.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/IRANSansWebFaNum.woff2") format("woff2"),
+    url("../fonts/IRANSansWebFaNum.woff") format("woff"),
+    url("../fonts/IRANSansWebFaNum.ttf") format("truetype"),
+    url("../fonts/IRANSansWebFaNum.svg#IRANSansWebFaNum") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "sans";
+  src: url("../fonts/IRANSansWeb-Bold.eot");
+  src: url("../fonts/IRANSansWeb-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/IRANSansWeb-Bold.woff2") format("woff2"),
+    url("../fonts/IRANSansWeb-Bold.woff") format("woff"),
+    url("../fonts/IRANSansWeb-Bold.ttf") format("truetype"),
+    url("../fonts/IRANSansWeb-Bold.svg#IRANSansWeb-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+input,
+select,
+textarea {
+  font-family: "sans";
+  outline: 0;
+  resize: none;
+}
+img {
+  max-width: 100%;
+}
+.has-ripple {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.ripple {
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  border-radius: 50%;
+  -webkit-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  background: #fff;
+  opacity: 1;
+}
+.ripple-animate {
+  -webkit-animation: ripple;
+  -o-animation: ripple;
+  animation: ripple;
+}
+@-webkit-keyframes ripple {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    transform: scale(2);
+  }
+}
+@-o-keyframes ripple {
+  100% {
+    opacity: 0;
+    -o-transform: scale(2);
+    transform: scale(2);
+  }
+}
+@keyframes ripple {
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+.dropzone-container {
+  .dropzone {
+    cursor: pointer;
+    @include transition;
+    position: relative;
+    font-size: 85%;
+    height: 50px;
+    overflow: hidden;
+    padding-left: 70px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: rgba($color: $black_color, $alpha: 0.1);
+
+    &::before {
+      content: "افزودن";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      background-color: $black_color;
+      color: $white_color;
+      line-height: 50px;
+      padding: 0 10px;
+    }
+
+    p {
+      padding-top: 3px;
+      padding-right: 10px;
+      padding-bottom: 3px;
+      overflow: hidden;
+    }
+
+    &:hover {
+      background-color: rgba($color: $black_color, $alpha: 0.25);
+    }
+
+    & + button {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      padding: 5px 10px;
+      border: 0;
+      background-color: #16aa09;
+      color: $white_color;
+      border-radius: 5px;
+    }
+  }
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.65;
+}
+.ltr-text {
+  display: inline-block;
+  direction: ltr;
+  text-align: right;
+  letter-spacing: 0.5px;
+}
+html,
+body {
+  direction: rtl;
+  font-size: 15px;
+  font-family: "sans";
+  font-weight: 400;
+  line-height: 1.75;
+  text-align: right;
+  overflow-x: hidden !important;
+  height: auto !important;
+}
+
+.wrapper {
+  padding: 75px 0;
+}
+
+.white-bg-color {
+  background-color: $white_color !important;
+}
+
+.title_up {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  color: $text_color;
+  font-size: 2em;
+  font-weight: 700;
+  padding-bottom: 1.5rem;
+  margin-bottom: 3rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 50px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: $light_blue_color;
+  }
+}

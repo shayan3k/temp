@@ -1,0 +1,29 @@
+@import "reset";
+// @import "header";
+// @import "./main/introWrapper";
+// @import "./main/amoutWrapper";
+// @import "./main/commentWrapper";
+// @import "./main/freeWrapper";
+// @import "./main/rankingWrapper";
+// @import "./main/socialWrapper";
+// @import "./main/teacherWrapper";
+// @import "./main/timeWrapper";
+// @import "./main/whyWrapper";
+// @import "footer";
+// @import "girlsVersion";
+@import "responsive";
+
+.index-page {
+  background-color: $white_color;
+}
+.main {
+  position: relative;
+  z-index: 0;
+}
+// .pages-main {
+//   padding-top: 85px;
+// }
+.gEIJqc:hover:enabled,
+.gEIJqc:focus:enabled {
+  background-color: $red_color !important;
+}

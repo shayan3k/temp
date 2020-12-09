@@ -1,0 +1,147 @@
+.header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  background: #fff;
+  height: 100px;
+  padding: 1.5rem 0;
+  -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04), 0 1px 6px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04), 0 1px 6px rgba(0, 0, 0, 0.04);
+  color: #7d7d7d;
+}
+
+.header .btn {
+  color: #7d7d7d;
+}
+
+.header .container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .header-logo {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: -5px;
+  bottom: 0;
+  margin: auto;
+  width: 115px;
+  height: 35px;
+}
+
+.header .header-logo img {
+  width: 100%;
+}
+
+.header .nav-left {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  text-align: left;
+}
+
+.header .nav-left .dropdown-toggle::after {
+  display: none;
+  content: "";
+}
+
+.header .nav-left .header-icons i {
+  font-size: 1.25em;
+}
+
+.header .nav-left .user .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .nav-left .user img {
+  margin-right: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.header .nav-right {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  text-align: right;
+}
+
+.header .nav-right .search {
+  width: 220px;
+  margin-left: 1rem;
+}
+
+.header .nav-right .search form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #eee;
+  border-radius: 32px;
+  overflow: hidden;
+}
+
+.header .nav-right .search input {
+  border: initial;
+  height: 38px;
+  line-height: 38px;
+  color: #666;
+  background: transparent;
+}
+
+.header .nav-right .search input:focus {
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+  border: unset;
+}
+
+.header .nav-right .search .btn {
+  height: 38px;
+  line-height: 34px;
+  border: 0;
+}
+
+.header .nav-right .search .btn:hover {
+  color: #e7284a;
+}
+
+.header .nav-right .search .btn:focus {
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+  border: unset;
+  color: #e7284a;
+}
+
+.header .nav-right .toggle-menu {
+  margin-left: 1.25rem;
+  margin-right: 0.75rem;
+}
+
+.header .nav-right .toggle-menu i {
+  font-size: 1.5em;
+}
+
+.header .nav-right .credit {
+  background-color: #eee;
+  border-radius: 32px;
+  overflow: hidden;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 1rem;
+}
+/*# sourceMappingURL=Header.css.map */

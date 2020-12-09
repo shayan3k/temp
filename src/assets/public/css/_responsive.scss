@@ -1,0 +1,466 @@
+@media only screen and(max-width: 993px) {
+  .comment-wrapper {
+    .comment-item {
+      .content {
+        max-width: 60%;
+      }
+    }
+  }
+
+  .teacher-wrapper {
+    .slide-content {
+      border-top: 2px solid #ffffff;
+      padding: 0px 30px 50px 30px;
+    }
+  }
+
+  .why-wrapper .title-box h2 {
+    font-size: 1em;
+  }
+  .display-4 {
+    font-size: 2.5rem !important;
+  }
+  header {
+    .navbar-light .navbar-toggler {
+      background-color: $light_blue_color;
+      color: $white_color;
+    }
+
+    .nav-link {
+      margin: 10px 0;
+    }
+  }
+
+  #open-menu {
+    display: block;
+  }
+
+  .wrapper {
+    padding: 60px 0 !important;
+  }
+
+  .main {
+    .intro-wrapper .content {
+      h1 {
+        font-size: 1.8em;
+        margin-bottom: 0.5rem;
+      }
+
+      h2 {
+        font-size: 1.05em;
+      }
+    }
+
+    .why-wrapper {
+      border-bottom-left-radius: 25%;
+
+      .humanObj {
+        max-height: 420px;
+      }
+    }
+
+    .free-wrapper {
+      padding-bottom: 140px;
+      .title-box {
+        margin-top: 2rem;
+      }
+    }
+
+    .amount-wrapper {
+      .title-box {
+        margin-top: -75px;
+        width: 160px;
+        height: 160px;
+        margin-bottom: 1rem;
+
+        & > div {
+          font-size: 1em;
+
+          i {
+            font-size: 2em;
+          }
+        }
+      }
+    }
+
+    .ranking-wrapper {
+      .title-box {
+        margin-bottom: 2rem;
+      }
+
+      .best-title {
+        margin-top: 2.5rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  .footer {
+    .footer-content {
+      margin-bottom: 2rem;
+    }
+
+    .copy-right {
+      margin-top: 0;
+    }
+  }
+
+  .page-title {
+    .container {
+      padding-top: 300px !important;
+    }
+
+    .p-title {
+      width: 100% !important;
+      min-height: unset !important;
+      right: unset !important;
+      padding: 1rem 1.5rem !important;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      text-align: center;
+      background-color: rgba($color: $red_color, $alpha: 0.75) !important;
+
+      h1,
+      h2 {
+        font-size: 1.75em !important;
+      }
+
+      &::after,
+      &::before {
+        display: none;
+      }
+    }
+
+    .breadcrumb-wrap {
+      position: relative !important;
+      left: unset !important;
+      right: unset !important;
+      min-height: unset !important;
+      padding: 0 !important;
+      display: block !important;
+      padding: 0.5rem 1.5rem !important;
+      background-color: rgba($color: $blue_color, $alpha: 0.7) !important;
+
+      &::before {
+        display: none !important;
+      }
+
+      ul {
+        text-align: center !important;
+      }
+    }
+  }
+
+  
+
+  .girls-page {
+    .main .why-wrapper {
+      border-bottom-left-radius: 25%;
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .why-wrapper {
+    .title-box {
+      h2 {
+        font-size: 1.125em;
+      }
+    }
+  }
+  .time-wrapper .time-carousel {
+    margin-bottom: 50px;
+  }
+  .dashboard-main {
+    .chargeWallet-wrapper {
+      padding: 2rem;
+    }
+  }
+  .remove-txt {
+    display: none;
+  }
+  .teacher-single-wrapper {
+    .image {
+      text-align: center;
+      margin-bottom: 1.5rem;
+
+      img {
+        display: inline-block;
+        width: auto !important;
+      }
+    }
+    .title-box {
+      text-align: center;
+
+      &::before {
+        left: 0;
+        margin: auto;
+      }
+    }
+  }
+  .header {
+    .container {
+      width: 96%;
+    }
+    .redirect a {
+      padding: 5px 15px;
+    }
+  }
+  .girls-page {
+    .main {
+      .intro-wrapper .content {
+        margin-bottom: 50px;
+      }
+    }
+  }
+  .main {
+    .teacher-wrapper {
+      margin-top: 0;
+      padding-top: 50px;
+
+      .slide-content {
+        padding: 0px 10px 50px 10px !important;
+      }
+    }
+    .intro-wrapper {
+      .row {
+        flex-direction: column-reverse;
+      }
+
+      .content {
+        margin-top: 25px;
+        text-align: center;
+
+        h2 {
+          margin-bottom: 1.25rem;
+        }
+
+        .btn {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+    .why-wrapper .humanObj {
+      display: none;
+    }
+    .free-wrapper {
+      padding-top: 100px;
+      padding-bottom: 75px;
+    }
+    .amount-wrapper {
+      padding-top: 75px;
+
+      .title-box {
+        margin-top: 0;
+      }
+
+      .content-box {
+        margin-bottom: 2rem;
+      }
+
+      .col-md-4:last-child {
+        .content-box {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .comment-wrapper {
+      .comment-item {
+        flex-direction: column;
+
+        .content {
+          max-width: 100%;
+          padding-right: 0;
+        }
+
+        &:nth-child(2n) {
+          direction: rtl;
+
+          .content {
+            text-align: right;
+            padding-left: 0;
+          }
+        }
+      }
+
+      .arrow1,
+      .arrow2,
+      .arrow3 {
+        display: none;
+      }
+    }
+
+    .comment-wrapper .comment-item .content .head {
+      text-align: center;
+      margin-top: 1rem;
+    }
+  }
+  .single-course-wrapper {
+    .teachers ul {
+      flex-wrap: wrap;
+
+      li {
+        text-align: center;
+
+        .image {
+          float: unset !important;
+          margin-left: 0 !important;
+        }
+      }
+    }
+    .widget {
+      margin-bottom: 1.5rem !important;
+    }
+  }
+
+  .girls-page {
+    .main .intro-wrapper .row {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+
+  .free-wrapper {
+    .display-4 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .ranking-wrapper {
+    .best-title {
+      margin-top: 5rem !important;
+    }
+
+    ul {
+      display: block;
+      li {
+        width: 100%;
+      }
+    }
+  }
+
+  .header .container {
+    width: 100%;
+  }
+
+  .teachers-wrapper {
+    .teacher-item .image {
+      text-align: center;
+
+      img {
+        display: inline-block;
+        width: auto !important;
+        max-height: 300px;
+      }
+    }
+  }
+
+  .girls-page {
+    .main {
+      .content {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  .main {
+    .intro-wrapper {
+      img {
+        display: table;
+        margin: auto;
+      }
+    }
+
+    .why-wrapper {
+      border-bottom-left-radius: 0;
+      padding-bottom: 10px;
+    }
+
+    .teacher-wrapper {
+      margin-top: 0;
+      padding-top: 50px;
+
+      .slide-content {
+        padding: 0px 10px 50px 10px !important;
+      }
+
+      .owl-theme .owl-nav {
+        .owl-prev {
+          right: -100px;
+        }
+        .owl-next {
+          left: -100px;
+        }
+      }
+    }
+
+    .ranking-wrapper .ranking-carousel {
+      // max-width: 60%;
+      margin: auto;
+    }
+
+    .time-wrapper .title-section {
+      font-size: 1em;
+      margin-right: 0;
+    }
+
+    .free-wrapper {
+      padding-bottom: 50px;
+    }
+    .amount-wrapper {
+      padding-bottom: 50px;
+      padding-top: 50px;
+    }
+
+    .social-wrapper {
+      padding-bottom: 100px;
+
+      .section-title {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .footer {
+    padding-top: 30px;
+  }
+
+  .page-title {
+    .container {
+      padding-top: 260px !important;
+    }
+
+    .p-title {
+      padding: 0.5rem 1.5rem !important;
+    }
+  }
+
+  .courses-wrapper .course-item .image-box img {
+    height: 240px;
+  }
+
+  .girls-page {
+    .main .why-wrapper {
+      border-bottom-right-radius: 0;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .d-lg-block {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}

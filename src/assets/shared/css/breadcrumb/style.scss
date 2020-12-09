@@ -1,0 +1,43 @@
+.title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-title {
+  font-size: 1.75em;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+}
+
+.bread {
+  display: flex;
+
+  li {
+    font-weight: 300;
+
+    a {
+      color: #303030;
+    }
+
+    &::after {
+      content: "";
+      width: 1px;
+      height: 15px;
+      border-radius: 1rem;
+      display: inline-block;
+      vertical-align: middle;
+      background-color: #777;
+      margin-right: 15px;
+      margin-left: 14px;
+    }
+
+    &:last-child::after {
+      display: none;
+    }
+
+    &.active {
+      font-weight: 400;
+    }
+  }
+}

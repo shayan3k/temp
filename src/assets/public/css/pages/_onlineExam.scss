@@ -1,0 +1,188 @@
+@import "../colors";
+
+.azmoon-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f5f5f5;
+
+  h2 {
+    font-weight: 700;
+    font-size: 2em;
+    color: $black_color;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .azmoon-aside {
+    width: 33.3333%;
+    height: 100vh;
+    overflow: auto;
+    border-left: 5px solid rgba($color: $light_blue_color, $alpha: 0.65);
+    overflow: auto;
+
+    .w18 {
+      background: #f5f5f5;
+      padding: 20px;
+      padding-top: 80px;
+      padding-bottom: 50px;
+
+      .form-group {
+        padding: 15px;
+        margin-bottom: 20px;
+        padding-bottom: 13px;
+        background-color: $white_color;
+        box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.5);
+
+        .control-label {
+          position: relative;
+          display: block;
+          color: #555555;
+          margin-bottom: 13px;
+          padding-bottom: 8px;
+          font-weight: 500;
+
+          &::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 50px;
+            height: 2px;
+            background-color: $light_blue_color;
+          }
+        }
+
+        .custom-control {
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 15px;
+          color: #555555;
+
+          &:last-child {
+            margin-left: 0;
+          }
+        }
+      }
+
+      .text-color {
+        color: $text_color;
+      }
+
+      ul {
+        margin: 15px 0;
+        margin-bottom: 30px;
+
+        li {
+          margin: 5px 0;
+
+          i {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 8px;
+            width: 36px;
+            height: 36px;
+            line-height: 35px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 1em;
+            background-color: $white_color;
+            border: 1px solid #ddd;
+          }
+        }
+      }
+    }
+  }
+
+  .azmoon-box {
+    width: 66.66666%;
+    height: 100vh;
+    overflow: auto;
+    background-color: #f5f5f5;
+    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+    .test-time {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 1px solid $light_blue_color;
+      color: #555;
+      z-index: 99;
+      max-width: 780px;
+      font-size: 16px;
+      font-weight: bold;
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: auto;
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .azmoon-wrapper {
+    display: block;
+    flex-wrap: unset;
+
+    h2 {
+      font-size: 1.75em;
+    }
+
+    .azmoon-aside {
+      width: 100%;
+      height: 40vh;
+      border-right: 5px solid rgba(0, 168, 255, 0.65);
+
+      .w18 {
+        .text-color {
+          text-align: center;
+        }
+      }
+
+      ul {
+        text-align: right;
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+          width: 50%;
+        }
+      }
+    }
+
+    .azmoon-box {
+      width: 100%;
+      height: 60vh;
+      border-top: 5px solid rgba(0, 168, 255, 0.65);
+      padding-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 577px) {
+  .azmoon-wrapper {
+    .azmoon-box .test-time {
+      font-size: 13px;
+    }
+    .azmoon-aside {
+      ul {
+        li {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

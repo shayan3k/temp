@@ -1,0 +1,41 @@
+.subset-wrapper .subset-item {
+  background-color: var(--navi-color);
+  color: var(--white-color);
+  padding: 30px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.subset-wrapper .subset-item a {
+  color: var(--white-color);
+  display: inline-block;
+  font-size: 90%;
+  font-weight: 300;
+  opacity: 0.6;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.subset-wrapper .subset-item a i {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+
+.subset-wrapper .subset-item a:hover {
+  opacity: 1;
+}
+
+.subset-wrapper .subset-item h6 {
+  opacity: 0.6;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.subset-wrapper .subset-item #subset-amount {
+  letter-spacing: 1px;
+  font-size: 4em;
+  text-shadow: 0 0 2px;
+  line-height: 1.2;
+}
+/*# sourceMappingURL=subset.css.map */

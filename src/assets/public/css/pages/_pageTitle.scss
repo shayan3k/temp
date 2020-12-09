@@ -1,0 +1,115 @@
+@import "../colors";
+
+.page-title {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .container {
+    position: relative;
+    padding-top: 340px;
+  }
+
+  .p-title {
+    width: 480px;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: $red_color;
+    color: $white_color;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    right: 15px;
+    z-index: 2;
+    min-height: 75px;
+
+    h1,
+    h2 {
+      position: relative;
+      z-index: 3;
+      font-size: 2.5em;
+      font-weight: 800;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: $red_color;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      right: -9999px;
+      left: 100%;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 80px;
+      position: absolute;
+      background-color: $red_color;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      left: -35px;
+      transform: skewX(-25deg);
+    }
+  }
+
+  .breadcrumb-wrap {
+    display: inline-block;
+    background-color: $blue_color;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    padding: 15px 0 15px 30px;
+    right: 375px;
+    left: 50px;
+    max-height: 75px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -35px;
+      width: 55px;
+      background-color: $blue_color;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      transform: skewX(-30deg);
+    }
+
+    ul {
+      direction: ltr;
+      text-align: left;
+
+      li {
+        display: inline-block;
+        direction: rtl;
+        text-align: right;
+
+        &::after {
+          content: ">";
+          display: inline-block;
+          margin-left: 15px;
+          margin-right: 15px;
+          color: $white_color;
+          font-size: 85%;
+        }
+
+        a {
+          color: $white_color;
+        }
+
+        &:first-child {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
